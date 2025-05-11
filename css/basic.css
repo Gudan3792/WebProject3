@@ -1,0 +1,355 @@
+@font-face {
+  font-family: '1984대화나눔';
+  src: url('../font/1984대화나눔_소곤소곤.ttf') format('truetype');
+}
+html, body {
+  height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: '1984대화나눔', sans-serif;
+  }
+  h1,h2,p{
+    font-family: '1984대화나눔', sans-serif;
+
+  }
+.body {
+  flex: 1 0 auto;
+    font-family: 'Noto Sans KR', sans-serif;
+    padding-top: 64px; /* 헤더 높이만큼 패딩 추가 */
+  }
+  .wrapper{
+    height: 100vh;
+  }
+  .header {
+    background: #fff;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 64px;
+    z-index: 1000;
+    align-items: center;
+    
+  }
+  .search-bar {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    max-width: 100%;
+    background: #fff;
+    box-sizing: border-box;
+    box-shadow: 0 6px 24px rgba(0,0,0,0.10);
+    padding: 20px 24px 20px 24px;
+    z-index: 1100;
+    align-items: center;
+    gap: 14px;
+    border-bottom-left-radius: 18px;
+    border-bottom-right-radius: 18px;
+    animation: dropdown-fadein 0.25s;
+  }
+  
+  @keyframes dropdown-fadein {
+    from { opacity: 0; transform: translateY(-16px);}
+    to   { opacity: 1; transform: translateY(0);}
+  }
+  
+  .search-bar input {
+    flex: 1;
+    min-width: 0;
+    max-width: 90%;
+    border: none;
+    outline: none;
+    font-size: 17px;
+    padding: 12px 16px;
+    border-radius: 8px;
+    background: #f7f7f7;
+    transition: box-shadow 0.15s;
+    box-shadow: 0 1px 4px rgba(25,179,76,0.04);
+    margin-right: 0;
+  }
+  
+  .search-bar input:focus {
+    box-shadow: 0 0 0 2px #64c4e4;
+    background: #fff;
+  }
+  
+  .search-bar button {
+    padding: 12px 28px;
+    border: none;
+    background: #23c8ff;
+    border-radius: 8px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 17px;
+    font-weight: 600;
+    transition: background 0.16s, color 0.16s, box-shadow 0.12s;
+    box-shadow: 0 2px 8px rgba(25,179,76,0.08);
+  }
+  
+  .search-bar button:hover,
+  .search-bar button:focus {
+    background: #1681a5;
+    color: #fff;
+    outline: none;
+  }
+  
+
+  .menu-bar {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 100%; /* 헤더 바로 아래 */
+    left: 0;
+    width: 100%;
+    max-width: 100%;
+    background: #fff;
+    box-sizing: border-box;
+    box-shadow: 0 6px 24px rgba(0,0,0,0.10); /* 더 자연스러운 그림자 */
+    padding: 24px 0 20px 0; /* 위아래 여백 넉넉히 */
+    z-index: 1100;
+    align-items: center;
+    text-align: center;
+    gap: 0;
+    border-bottom-left-radius: 18px;
+    border-bottom-right-radius: 18px;
+    animation: dropdown-fadein 0.25s;
+  }
+  
+  @keyframes dropdown-fadein {
+    from { opacity: 0; transform: translateY(-16px);}
+    to   { opacity: 1; transform: translateY(0);}
+  }
+  
+  .menu-bar nav {
+    display: flex;
+    gap: 40px;
+    font-size: 18px;
+    font-weight: 500;
+    justify-content: center;
+  }
+  
+  .menu-bar nav a {
+    color: #1a1a1a;
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 8px;
+    transition: background 0.16s, color 0.16s;
+  }
+  
+  .menu-bar nav a:hover,
+  .menu-bar nav a:focus {
+    background: #d1f2fd;
+    color: #20b4e6;
+  }
+  
+  .header_container {
+    max-width: 1280px;
+    min-height: 64px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 32px;
+    position: relative;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    
+  }
+  .logo img{
+    height:40px;
+  }
+  
+  .nav_menu {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    font-size: 17px;
+    font-weight: 500;
+  }
+  
+  .nav_menu a, .dropdown-btn {
+    color: #222;
+    text-decoration: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 8px 12px;
+    transition: color 0.2s;
+    font-family: '1984대화나눔', sans-serif !important;
+  }
+  .nav_menu a:hover, .dropdown-btn:hover {
+    color: #20b4e6;
+  }
+  
+  .nav_dot {
+    color: #bbb;
+    font-size: 22px;
+    margin: 0 6px;
+  }
+  
+  .header_icons {
+    display: flex;
+    align-items: center;
+    gap: 0px;
+  }
+  
+  .header_Object {
+    width: 24px;
+    height: 24px;
+    background: url("../img/search.png") no-repeat center/contain;
+    cursor: pointer;
+  }
+  .header_bar{
+    display: block;
+    width: 36px;
+    height: 1px;
+    background: #bbb;
+    border-radius: 2px;
+    transform: rotate(90deg);
+    padding: 0px;
+  }
+  .hamburger {
+    width: 36px;
+    height: 36px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+  .hamburger span {
+    display: block;
+    width: 24px;
+    height: 3px;
+    background: #222;
+    margin: 4px 0;
+    border-radius: 2px;
+  }
+  
+  /* 드롭다운 메뉴 */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  .dropdown-btn {
+    font-size: 17px;
+    font-weight: 500;
+    color: #222;
+    cursor: pointer;
+    padding: 8px 12px;
+    border-radius: 4px 4px 0 0;
+    background: none;
+    border: none;
+  }
+  .dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    min-width: 180px;
+    background: #fff;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+    border-radius: 0 0 8px 8px;
+    padding: 8px 0;
+    margin: 0;
+    list-style: none;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.2s;
+    z-index: 9999;
+  }
+  .dropdown-menu li {
+    padding: 10px 24px;
+    cursor: pointer;
+    font-size: 16px;
+    color: #222;
+  }
+  .dropdown-menu li:hover {
+    background: #f8f9fa;
+    color: #ff8000;
+  }
+  #dropdown-toggle:checked + .dropdown-btn + .dropdown-menu {
+    visibility: visible;
+    opacity: 1;
+  }
+
+
+  /*회사정보*/
+  .footer-bar {
+    width: 100vw;
+    background: #555;
+    color: #f4f4f4;
+    font-size: 1rem;
+    padding: 14px 0 8px 0;
+    box-sizing: border-box;
+    position: relative;
+    margin: 0;
+  }
+  
+  .footer-content {
+    font-family: 'Noto Sans KR', sans-serif;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    line-height: 1.6;
+  }
+  
+  .footer-content a.footer-policy-btn {
+    display: inline-block;
+    background: #aaa;
+    color: #fff;
+    font-size: 0.98rem;
+    padding: 2px 10px;
+    border-radius: 4px;
+    margin-left: 10px;
+    text-decoration: none;
+    vertical-align: middle;
+    transition: background 0.16s;
+  }
+  
+  .footer-content a.footer-policy-btn:hover {
+    background: #888;
+  }
+  
+  .footer-content span.footer-copyright {
+    display: block;
+    color: #e0e0e0;
+    font-size: 0.6rem;
+    margin-top: 4px;
+  }
+
+
+  /*햄버거메뉴*/
+  
+  @media (max-width: 1000px) {
+    .footer-bar {
+      font-size: 0.93rem;
+      padding: 10px 0 6px 0;
+    }
+    .footer-content {
+      padding: 0 6px;
+    }
+    .footer-content a.footer-policy-btn {
+      margin-top: 6px;
+      margin-left: 0;
+      display: block;
+    }
+    .header_container {
+      padding: 0 12px;
+    }
+    .nav_menu {
+      display: none;
+    }
+    .header_icons {
+      gap: 4px;
+    }
+  }

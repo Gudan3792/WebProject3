@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/search.css"/>
+    <link rel="stylesheet" href="css/basic.css">
+    <title>트러스트플랜</title>
+</head>
+<body>
+    <div class="wrapper">
+    <header class="header">
+        <div class="header_container">
+            <div class="logo">
+                <a href="index.html"><img src="img/logo_name.png" alt="트러스트플랜 로고"></a>
+            </div>
+            <nav class="nav_menu">
+                <a href="#">트러스트플랜은 어떤회사인가요?</a>
+                <span class="nav_dot">·</span>
+                <div class="dropdown">
+                    <input type="checkbox" id="dropdown-toggle" hidden>
+                    <label for="dropdown-toggle" class="dropdown-btn">보험상품 정보</label>
+                    <ul class="dropdown-menu">
+                      <li><a href="insure_info.html#car-insurance">자동차보험</a></li>
+                      <li><a href="insure_info.html#medical-insurance">실손의료보험</a></li>
+                      <li><a href="insure_info.html#travel-insurance">여행자보험</a></li>
+                      <li><a href="insure_info.html#child-insurance">어린이보험</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="header_icons">
+                <div class="header_Object"></div>
+                <span class="header_bar"></span>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+        <div class="menu-bar" style="display: none;">
+          <nav>
+            <a href="whatis.html">트러스트플랜이란?</a>
+            <a href="insure_info.html">보험상품정보</a>
+            <a href="insure_join.html" class="insure_compare" data-keyword="자동차보험">보험료 비교하기</a>
+            </nav>
+            </div>
+        <div class="search-bar" style="display: none;">
+          <input type="text" id="search-input" placeholder="검색어를 입력하세요">
+          <button id="search-btn" type="button">검색</button>
+        </div>
+    </header>
+    <div class="body">
+        <h1>통합검색</h1>
+        <hr class="body-divider">
+        <!-- 검색결과 영역 -->
+        <div class="search-result-container">
+          <h2 class="search-title">
+            <span class="search-keyword">검색내용</span>
+            <span>에 대한 통합검색 결과 총</span>
+            <span class="search-count">0</span>
+            <span>건</span>
+          </h2>
+          <div class="search-category-tabs">
+            <button class="tab active">전체</button>
+            <button class="tab">실손의료보험</button>
+            <button class="tab">자동차보험</button>
+            <button class="tab">여행자보험</button>
+            <button class="tab">어린이보험</button>
+          </div>
+          <div class="search-no-result">
+            <div class="search-no-result-icon">!</div>
+            <div class="search-no-result-text">
+              <span class="search-keyword">"검색내용"</span>
+              에 대한 검색 자료가 없습니다.<br>
+              <span class="search-no-result-tip">다른 검색어로 검색해 보시기 바랍니다.</span>
+            </div>
+          </div>
+        </div>
+        
+<!-- ...이하 결과 리스트 등... -->
+
+      </div>
+      <footer class="footer-bar">
+        <div class="footer-content">
+          서울특별시 0구 0로0길 0 ㈜트러스트플랜 사업자등록번호 000-00-00000  | 대표 000
+          <br>
+          <span class="footer-copyright">Copyright © 2025 Gudan All right reserved.</span>
+        </div>
+      </footer>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="js/search.js"></script>
+    <script src="js/insure_button.js"></script>
+</body>
+</html>

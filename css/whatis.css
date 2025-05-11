@@ -1,0 +1,124 @@
+.body {
+    max-width: 100%;
+    padding-top: 64px;
+    font-family: 'Noto Sans KR', '맑은 고딕', sans-serif;
+    color: #222;
+  }
+  
+  .body h1 {
+    font-size: 2.6rem;
+    font-weight: 700;
+    margin-bottom: 18px;
+    text-align: left;
+    letter-spacing: -1px;
+  }
+  
+  .body-divider {
+    border: none;
+    border-top: 3px solid #222;
+    margin: 24px 0 36px 0;
+  }
+  
+  .company-info h2 {
+    font-size: 1.45rem;
+    font-weight: 700;
+    margin-bottom: 18px;
+    color: #222;
+  }
+  
+  .company-info ol {
+    padding-left: 0;
+    margin: 0 0 24px 0;
+    list-style: none;
+  }
+  
+  .company-info li {
+    font-size: 1.08rem;
+    color: #444;
+    margin-bottom: 8px;
+    line-height: 1.7;
+    font-weight: 400;
+  }
+  
+  .company-info .info-note {
+    color: #e23d3d;
+    font-size: 1.01rem;
+    margin-top: 12px;
+    font-weight: 500;
+  }
+  
+  .company-fullwidth {
+    width: 100vw;
+    margin: 0;
+    padding: 40px 64px 0 64px;
+    box-sizing: border-box;
+    background: #fff;
+    color: #222;
+    font-family: 'Noto Sans KR', sans-serif;
+  }
+  
+  .company-fullwidth h1 {
+    font-size: 2.3rem;
+    font-weight: 700;
+    margin-bottom: 18px;
+    text-align: left;
+    letter-spacing: -1px;
+  }
+  
+  .body-divider {
+    border: none;
+    border-top: 3px solid #222;
+    margin: 24px 0 36px 0;
+  }
+  
+  .company-info h2 {
+    font-size: 1.18rem;
+    font-weight: 700;
+    margin-bottom: 18px;
+    color: #222;
+    text-align: left;
+  }
+  
+  .company-info ol {
+    padding-left: 0;
+    margin: 0 0 24px 0;
+    list-style: none;
+  }
+  
+  .company-info li {
+    font-size: 1.07rem;
+    color: #444;
+    margin-bottom: 10px;
+    line-height: 1.75;
+    font-weight: 400;
+    text-align: left;
+  }
+  
+  .info-note {
+    color: #e23d3d;
+    font-size: 1.01rem;
+    margin-top: 12px;
+    font-weight: 500;
+    text-align: left;
+  }
+  .location-desc{
+    font-family: 'Noto Sans KR', '맑은 고딕', sans-serif;
+  }
+  .company-location{
+    padding: 0 64px;
+  }
+
+  .map-wrap{
+    padding: 0 64px 64px 64px;
+  }
+  /* 반응형 */
+  @media (max-width: 700px) {
+    .company-fullwidth {
+      padding: 24px 8px 0 8px;
+    }
+    .company-fullwidth h1 {
+      font-size: 1.3rem;
+    }
+  }
+  
+  

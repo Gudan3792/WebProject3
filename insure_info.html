@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/insure_info.css"/>
+    <link rel="stylesheet" href="css/basic.css">
+    <title>트러스트플랜</title>
+</head>
+<body>
+    <div class="wrapper">
+    <header class="header">
+        <div class="header_container">
+            <div class="logo">
+                <a href="index.html"><img src="img/logo_name.png" alt="트러스트플랜 로고"></a>
+            </div>
+            <nav class="nav_menu">
+                <a href="whatis.html">트러스트플랜은 어떤회사인가요?</a>
+                <span class="nav_dot">·</span>
+                <div class="dropdown">
+                    <input type="checkbox" id="dropdown-toggle" hidden>
+                    <label for="dropdown-toggle" class="dropdown-btn">보험상품 정보</label>
+                    <ul class="dropdown-menu">
+                        <li><a href="insure_info.html#car-insurance">자동차보험</a></li>
+                        <li><a href="insure_info.html#medical-insurance">실손의료보험</a></li>
+                        <li><a href="insure_info.html#travel-insurance">여행자보험</a></li>
+                        <li><a href="insure_info.html#child-insurance">어린이보험</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="header_icons">
+                <div class="header_Object"></div>
+                <span class="header_bar"></span>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+        <div class="menu-bar" style="display: none;">
+            <nav>
+            <a href="whatis.html">트러스트플랜이란?</a>
+            <a href="insure_info.html">보험상품정보</a>
+            <a href="insure_join.html" class="insure_compare" data-keyword="자동차보험">보험료 비교하기</a>
+            </nav>
+            </div>
+        <div class="search-bar" style="display: none;">
+            <input type="text" id="search-input" placeholder="검색어를 입력하세요">
+          <button id="search-btn" type="button">검색</button>
+        </div>
+    </header>
+    <div class="body">
+        <!-- 자동차보험 섹션 -->
+<section id="car-insurance">
+    <div class="insurance_div">
+        <h2>자동차보험 이란?</h2>
+        <hr class="body-divider">
+        <ul class="insurance-list">
+            <li>
+                <span class="item-title">대인배상 I <span class="item-sub orange">의무보험</span></span>
+                <span class="item-desc">피보험자가 피보험자동차의 대인사고로 제3자에게 법률상 손해배상책임을 짐으로써 입은 손해를 보상</span>
+            </li>
+            <li>
+                <span class="item-title">대인배상 II</span>
+                <span class="item-desc">피보험자가 피보험자동차의 대인사고로 인하여 제3자에게 법률상 손해배상책임을 짐으로써 입은 대인배상 I 초과손해 보상</span>
+            </li>
+            <li>
+                <span class="item-title">대물배상 <span class="item-sub orange">2천만원이상 의무가입</span></span>
+                <span class="item-desc">피보험자가 피보험자동차의 대물사고로 제3자에게 법률상 손해배상책임을 짐으로써 입은 손해 보상</span>
+            </li>
+            <li>
+                <span class="item-title">자기신체사고</span>
+                <span class="item-desc">피보험자가 피보험자동차의 사고로 인하여 입은 상해 보상</span>
+            </li>
+            <li>
+                <span class="item-title">자기차량손해</span>
+                <span class="item-desc">피보험자동차의 파손이나 도난 등에 의한 손해 보상</span>
+            </li>
+            <li>
+                <span class="item-title">무보험자동차 상해</span>
+                <span class="item-desc">피보험자가 무보험자동차에 의하여 입은 손해 보상</span>
+            </li>
+        </ul>
+    </div>
+    
+    
+    
+  </section>
+  
+  <!-- 실손의료보험 섹션 -->
+  <section id="medical-insurance">
+    <div class="insurance_div">
+        <h2>실손의료보험이란?</h2>
+        <hr class="body-divider">
+        <div class="insurance-desc">
+          <p>
+            <strong>실손의료보험</strong>은 피보험자가 질병·상해로 입원 또는 통원 치료 시 소비자가 실제 부담한 의료비를 보험금으로 지급하는 상품입니다.<br>
+            <span class="desc-note">
+              * 「국민건강보험법」상 요양급여와 「의료급여법」상 의료급여 중 본인부담액과<br>
+              「국민건강보험법」 또는 「의료급여법」에 따라 보건복지부장관이 정한 비급여의 합계액에서<br>
+              약관에서 정한 자기부담금을 차감 후 지급합니다.
+            </span>
+          </p>
+        </div>
+      
+        <div class="insurance-section-title">4세대 실손의료보험 주요 보장</div>
+        <div class="insurance-cards-grid">
+          <div class="insurance-card">
+            <div class="card-title">기본형 <span class="card-badge">상해급여</span></div>
+            <ul>
+              <li><b>입원</b> (통원 합산 5천만원 한도): 급여 보장대상의료비에서 <b>공제금액(=보장대상의료비의 20%)</b>을 뺀 금액</li>
+              <li><b>통원</b> (회당 20만원 한도): 급여 보장대상의료비에서 <b>공제금액(=Max[보장대상의료비의 20%, 최소자기부담금])</b>을 뺀 금액<br>
+              · 최소자기부담금: (병·의원) 1만원, (상급·종합병원) 2만원</li>
+            </ul>
+          </div>
+          <div class="insurance-card">
+            <div class="card-title">기본형 <span class="card-badge">질병급여</span></div>
+            <ul>
+              <li><b>입원</b> (통원 합산 5천만원 한도): 급여 보장대상의료비에서 <b>공제금액(=보장대상의료비의 20%)</b>을 뺀 금액</li>
+              <li><b>통원</b> (회당 20만원 한도): 급여 보장대상의료비에서 <b>공제금액(=Max[보장대상의료비의 20%, 최소자기부담금])</b>을 뺀 금액<br>
+              · 최소자기부담금: (병·의원) 1만원, (상급·종합병원) 2만원</li>
+            </ul>
+          </div>
+          <div class="insurance-card">
+            <div class="card-title">특별약관 <span class="card-badge">상해비급여</span></div>
+            <ul>
+              <li><b>입원</b> (통원 합산 5천만원 한도): 비급여 보장대상의료비(3대비급여 제외)에서 <b>공제금액(=보장대상의료비의 30%)</b>을 뺀 금액</li>
+              <li><b>상급병실료 차액보장</b>: 비급여 병실료의 50% (1일 평균 10만원 한도)</li>
+              <li><b>통원</b> (회당 20만원, 연 100회 한도): 비급여 보장대상의료비에서 <b>공제금액(=Max[보장대상의료비의 30%, 최소자기부담금])</b>을 뺀 금액<br>
+              · 최소자기부담금: 3만원</li>
+            </ul>
+          </div>
+          <div class="insurance-card">
+            <div class="card-title">특별약관 <span class="card-badge">질병비급여</span></div>
+            <ul>
+              <li><b>입원</b> (통원 합산 5천만원 한도): 비급여 보장대상의료비(3대비급여 제외)에서 <b>공제금액(=보장대상의료비의 30%)</b>을 뺀 금액</li>
+              <li><b>상급병실료 차액보장</b>: 비급여 병실료의 50% (1일 평균 10만원 한도)</li>
+              <li><b>통원</b> (회당 20만원, 연 100회 한도): 비급여 보장대상의료비에서 <b>공제금액(=Max[보장대상의료비의 30%, 최소자기부담금])</b>을 뺀 금액<br>
+              · 최소자기부담금: 3만원</li>
+            </ul>
+          </div>
+          <div class="insurance-card">
+            <div class="card-title">3대 비급여</div>
+            <ul>
+              <li>도수·체외충격파·증식 치료<br>
+                (연 350만원, 연 50회 한도 / 최초 10회 보장, 이후 증상 개선 시 10회 단위로 연 50회까지 보상)
+              </li>
+              <li>주사료(연 250만원, 50회 한도)</li>
+              <li>자기공명영상진단(연 300만원 한도)</li>
+              <li>비급여 보장대상의료비에서 <b>공제금액(=Max[보장대상의료비의 30%, 최소자기부담금])</b>을 뺀 금액<br>
+              · 최소자기부담금: 3만원</li>
+            </ul>
+          </div>
+        </div>
+      
+        <div class="insurance-section-title">실손형보험과 정액형 보험의 차이</div>
+        <div class="insurance-compare-table">
+          <table>
+            <thead>
+              <tr>
+                <th>구분</th>
+                <th>실손의료보험</th>
+                <th>정액보험</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>보험의 목적</td>
+                <td>상해·질병으로 실제 발생한 의료비 손해액<br>(금액으로 측정 가능)</td>
+                <td>질병 또는 재해<br>(금액으로 측정 불가)</td>
+              </tr>
+              <tr>
+                <td>보상 요건</td>
+                <td>입·통원, 처방·조제로 「국민건강보험법」상 요양급여 또는 「의료급여법」상 의료급여 등으로 발생한 본인부담금 및 요양급여에 해당하지 않는 비급여 의료비</td>
+                <td>입원·수술 등 특정 의료행위</td>
+              </tr>
+              <tr>
+                <td>지급 보험금</td>
+                <td>실제 지불한 의료비에서 일부 자기부담금을 차감한 금액</td>
+                <td>사고 별 정액(定額) 보험금</td>
+              </tr>
+              <tr>
+                <td>다수보험 계약</td>
+                <td>각 계약 별 지급액 합이 실제로 부담한 금액을 초과하지 않도록 회사 별 비례 보상</td>
+                <td>중복과 무관하게 각 계약의 사전 약정금액 보상</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="insurance-desc-note">
+          ※ 보장대상의료비 = 실제 부담액 - 보장제외금액(약관에 따라 회사가 보장하지 않는 사항에 따른 금액)
+        </div>
+      </div>
+      
+</section>
+  
+  <!-- 여행자보험 섹션 -->
+  <section id="travel-insurance">
+    <div class="insurance_div">
+        <h2>여행자보험이란?</h2>
+        <hr class="body-divider">
+        <div class="insurance-cards-grid">
+          <!-- 국내 여행자보험 -->
+          <div class="insurance-card">
+            <div class="card-title">국내 여행자보험</div>
+            <ul>
+              <li><b>보장대상:</b> 국내여행 중 발생할 수 있는 상해·질병, 사망, 후유장해, 휴대품 손해, 배상책임 등</li>
+              <li><b>주요 보장:</b>
+                <ul>
+                  <li>상해사망 및 후유장해</li>
+                  <li>상해·질병 치료비 (실손의료비)</li>
+                  <li>강력범죄보상금</li>
+                  <li>배상책임(타인 신체·재물 손해)</li>
+                  <li>휴대품 도난·파손(특약)</li>
+                </ul>
+              </li>
+              <li><b>특징:</b> 실손보험 미가입자, 고령자, 레저활동 여행자, 휴대품 보장이 필요한 경우 추천</li>
+              <li><b>보험기간:</b> 1일~31일 (단기)</li>
+              <li><b>보험료:</b> 저렴하며, 가족 동반 가입 가능</li>
+            </ul>
+          </div>
+          <!-- 해외 여행자보험 -->
+          <div class="insurance-card">
+            <div class="card-title">해외 여행자보험</div>
+            <ul>
+              <li><b>보장대상:</b> 해외여행 중 발생할 수 있는 상해·질병, 사망, 후유장해, 휴대품 손해, 배상책임, 여행 취소·지연, 구조송환 등</li>
+              <li><b>주요 보장:</b>
+                <ul>
+                  <li>상해·질병 사망 및 후유장해</li>
+                  <li>해외 의료비(입원·통원)</li>
+                  <li>휴대품 손해(분실·도난·파손)</li>
+                  <li>배상책임(타인 신체·재물 손해)</li>
+                  <li>항공기/수하물 지연·분실 보상</li>
+                  <li>긴급 구조·송환비, 중대사고 구조비</li>
+                </ul>
+              </li>
+              <li><b>특징:</b> 의료비 비싼 국가, 도난 위험 지역 여행 시 필수. 단기(1~3개월) 및 장기(4개월 이상) 체류 모두 가능</li>
+              <li><b>보험료:</b> 여행 기간·국가·플랜에 따라 다름 (1만 원대부터)</li>
+            </ul>
+          </div>
+          <!-- 유학생 보험 -->
+          <div class="insurance-card">
+            <div class="card-title">유학생 보험</div>
+            <ul>
+              <li><b>보장대상:</b> 해외 유학·어학연수·장기 체류 중 발생하는 상해, 질병, 의료비, 휴대품 손해, 배상책임 등</li>
+              <li><b>주요 보장:</b>
+                <ul>
+                  <li>상해·질병 치료비 및 입원·통원비</li>
+                  <li>질병 사망·후유장해</li>
+                  <li>휴대품 손해(노트북, 스마트폰 등)</li>
+                  <li>배상책임(타인 신체·재물 손해)</li>
+                  <li>긴급 구조·송환, 학업 중단 보상(특약)</li>
+                </ul>
+              </li>
+              <li><b>특징:</b> 해외 장기 체류(4개월 이상) 유학생·연수생 필수, 학교 요구 조건에 맞는 보험 설계 가능</li>
+              <li><b>보험기간:</b> 4개월~수년(장기)</li>
+            </ul>
+          </div>
+        </div>
+        <div class="insurance-desc-note" style="margin-top:20px;">
+          ※ 여행자보험은 여행 중 예상치 못한 사고, 질병, 휴대품 손해, 법적 책임 등 다양한 위험에 대비할 수 있는 상품입니다. <br>
+          목적지, 여행기간, 활동에 따라 적합한 보험을 선택하세요.
+        </div>
+      </div>
+      
+</section>
+  
+  <!-- 어린이보험 섹션 -->
+  <section id="child-insurance">
+    <div class="insurance_div">
+        <h2>어린이보험이란?</h2>
+        <hr class="body-divider">
+        <div class="insurance-desc">
+          <p>
+            <strong>어린이보험</strong>은 태아부터 청소년, 성년까지 성장 단계별로 발생할 수 있는 다양한 질병·상해·사고·입원·수술 등 위험을 종합적으로 보장하는 상품입니다. <br>
+            암, 백혈병, 중대질병, 골절, 화상, 감염병, 입원·수술비 등 실생활에서 자주 발생하는 위험까지 폭넓게 대비할 수 있습니다.<br>
+            최근에는 100세 만기, 보험료 납입면제, 납입지원, 가족 할인, 재해·특정질병 특약 등 다양한 혜택과 옵션이 제공됩니다.
+          </p>
+        </div>
+      
+        <div class="insurance-section-title">어린이보험 주요 보장</div>
+        <div class="insurance-cards-grid">
+          <div class="insurance-card">
+            <div class="card-title">질병 및 상해 보장</div>
+            <ul>
+              <li><b>암·백혈병·중대질병 진단비</b> (최대 2억 원 보장)</li>
+              <li><b>골절·화상·수족구·아토피 등</b> 어린이 질환 진단비</li>
+              <li><b>입원·수술·통원비</b> (상해·질병 모두 보장)</li>
+              <li><b>재해사망·후유장해</b> (최대 1억 5천만 원)</li>
+            </ul>
+          </div>
+          <div class="insurance-card">
+            <div class="card-title">생활 위험 및 감염병 보장</div>
+            <ul>
+              <li><b>독감, 수족구, 아토피 등</b> 어린이 감염병 진단·치료비</li>
+              <li><b>깁스, 화상, 골절</b> 등 자주 발생하는 생활상해 보장</li>
+              <li><b>응급실 내원 진료비</b>, 상해·질병 간호간병비</li>
+              <li><b>특정 감염병·중증질환</b> 보장 특약</li>
+            </ul>
+          </div>
+          <div class="insurance-card">
+            <div class="card-title">특약 및 추가 혜택</div>
+            <ul>
+              <li><b>보험료 납입면제·납입지원</b> (중대질병·장해 발생 시)</li>
+              <li><b>가족 할인</b> (2명 이상 자녀 가입 시 보험료 할인)</li>
+              <li><b>100세 만기, 30세 만기 등 다양한 만기 옵션</b></li>
+              <li><b>보험료 환급형/비환급형</b> 선택 가능</li>
+            </ul>
+          </div>
+        </div>
+        <div class="insurance-desc-note" style="margin-top:20px;">
+          ※ 어린이보험은 자녀의 연령, 건강 상태, 가족의 재정 상황에 따라 적합한 상품과 특약을 선택하는 것이 중요합니다.<br>
+          가입 전 약관을 꼼꼼히 확인하고, 필요 시 전문가 상담을 받으세요.
+        </div>
+      </div>
+      
+</section>
+        <br><br><br>
+      </div>
+      <footer class="footer-bar">
+        <div class="footer-content">
+          서울특별시 0구 0로0길 0 ㈜트러스트플랜 사업자등록번호 000-00-00000  | 대표 000
+          <br>
+          <span class="footer-copyright">Copyright © 2025 Gudan All right reserved.</span>
+        </div>
+      </footer>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="js/search.js"></script>
+    <script src="js/insure_button.js"></script>
+</body>
+</html>
